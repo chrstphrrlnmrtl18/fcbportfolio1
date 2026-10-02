@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph - SEO -->
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <title>IT Instructor Portfolio Template</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            rose: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+            },
+            blush: {
+              50: '#fdf8f8',
+              100: '#fbf0f2',
+              200: '#f7e1e5',
+              300: '#f0c7cf',
+              400: '#e59fae',
+              500: '#d7768b',
+              600: '#c2536c',
+            },
+            slate: {
+              850: '#172033',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-[#fdf9fa] via-[#fff5f6] to-[#faf3f5] text-slate-800 antialiased min-h-screen selection:bg-rose-200 selection:text-rose-900">
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-rose-100/70 transition-all">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- EDIT: LOGO / NAME -->
+      <a href="#hero" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-200 to-rose-400 text-white flex items-center justify-center shadow-sm shadow-rose-200/50">
+          <i data-lucide="book-open" class="w-5 h-5 text-rose-900/90"></i>
+        </div>
+        <span class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-rose-600 transition-colors">
+          <!-- EDIT: NAVIGATION_BRAND_NAME -->
+          Your Name
+        </span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#hero" class="hover:text-rose-600 transition-colors flex items-center gap-1.5 py-1">
+          <i data-lucide="home" class="w-4 h-4 text-rose-400"></i>
+          Home
+        </a>
+        <a href="#about" class="hover:text-rose-600 transition-colors flex items-center gap-1.5 py-1">
+          <i data-lucide="user" class="w-4 h-4 text-rose-400"></i>
+          About
+        </a>
+        <a href="#projects" class="hover:text-rose-600 transition-colors flex items-center gap-1.5 py-1">
+          <i data-lucide="presentation" class="w-4 h-4 text-rose-400"></i>
+          Work Samples
+        </a>
+        <a href="#skills" class="hover:text-rose-600 transition-colors flex items-center gap-1.5 py-1">
+          <i data-lucide="cpu" class="w-4 h-4 text-rose-400"></i>
+          Skills &amp; Tools
+        </a>
+        <a href="#contact" class="hover:text-rose-600 transition-colors flex items-center gap-1.5 py-1">
+          <i data-lucide="mail" class="w-4 h-4 text-rose-400"></i>
+          Contact
+        </a>
+      </nav>
+
+      <!-- Mobile Nav Links -->
+      <div class="flex items-center gap-3 md:hidden">
+        <a href="#projects" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 hover:bg-rose-200 transition-colors">
+          Samples
+        </a>
+        <a href="#contact" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-rose-500 text-white hover:bg-rose-600 transition-colors">
+          Contact
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 space-y-28 py-16">
+
+    <!-- ==================== LANDING / HERO ==================== -->
+    <section id="hero" class="relative pt-6 pb-12 flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-16">
+      <div class="flex-1 space-y-6 text-center md:text-left">
+        <!-- Optional decorative icon or profession label -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-100/80 border border-rose-200 text-rose-800 text-xs font-semibold tracking-wide uppercase">
+          <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-rose-600"></i>
+          <!-- EDIT: HERO_PROFESSION_LABEL -->
+          IT Instructor
+        </div>
+
+        <div class="space-y-3">
+          <!-- EDIT: HERO_NAME -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+            Chris Mortel
+          </h1>
+          <!-- EDIT: HERO_JOB_TITLE -->
+          <p class="text-xl sm:text-2xl font-medium text-rose-600">
+            IT Instructor
+          </p>
+        </div>
+
+        <!-- EDIT: HERO_SHORT_INTRODUCTION -->
+        <p class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed font-normal">
+          I am an IT Educator who teaches MEVN for x years already in Zuitt.
+        </p>
+
+        <!-- Only Allowed CTA: Link to Projects -->
+        <div class="pt-2 flex justify-center md:justify-start">
+          <a href="#projects" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-medium shadow-md shadow-rose-200 transition-all hover:shadow-lg hover:-translate-y-0.5">
+            <span>View Work Samples</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- EDIT: PROFILE_IMAGE -->
+      <div class="relative shrink-0 flex items-center justify-center">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-rose-200/50 to-pink-100/50 rounded-full blur-2xl -z-10"></div>
+        <div class="relative p-2 rounded-full bg-white/90 shadow-xl shadow-rose-100/80 border border-rose-100">
+          <!-- EDIT: PROFILE_IMAGE -->
+          <img src="./profile.JPG" alt="Profile image" class="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 object-cover rounded-full">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="relative">
+      <div class="bg-white/80 border border-rose-100/90 rounded-3xl p-8 sm:p-12 shadow-sm shadow-rose-50/50 relative overflow-hidden backdrop-blur-sm">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="p-2.5 rounded-xl bg-rose-100/70 text-rose-600">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">About</h2>
+            <p class="text-xs font-medium text-rose-500 uppercase tracking-wider mt-0.5">Instructor Background</p>
+          </div>
+        </div>
+
+        <!-- EDIT: ABOUT_TEXT -->
+        <p class="text-slate-600 text-lg leading-relaxed font-normal">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS / WORK SAMPLES ==================== -->
+    <section id="projects" class="space-y-8">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 rounded-xl bg-rose-100/70 text-rose-600">
+          <i data-lucide="folder-git-2" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Projects / Work Samples</h2>
+          <p class="text-xs font-medium text-rose-500 uppercase tracking-wider mt-0.5">Instructional Curricula &amp; Technical Labs</p>
+        </div>
+      </div>
+
+      <!-- Exactly 3 reusable project cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- CARD 1 -->
+        <div class="bg-white rounded-2xl border border-rose-100/90 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <div class="w-full aspect-video bg-rose-50/50 overflow-hidden relative border-b border-rose-100/60">
+            <!-- EDIT: PROJECT_1_IMAGE -->
+            <img src="https://thumbs.dreamstime.com/b/curriculum-icon-trendy-design-style-isolated-white-background-vector-simple-modern-flat-symbol-web-site-mobile-logo-135729597.jpg" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+            <div class="space-y-2">
+              <!-- EDIT: PROJECT_1_TITLE -->
+              <h3 class="text-lg font-bold text-slate-900">
+                Project Title 1
+              </h3>
+              <!-- EDIT: PROJECT_1_DESCRIPTION -->
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div>
+              <!-- EDIT: PROJECT_1_LINK -->
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors pt-2">
+                <span>Project Link</span>
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white rounded-2xl border border-rose-100/90 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <div class="w-full aspect-video bg-rose-50/50 overflow-hidden relative border-b border-rose-100/60">
+            <!-- EDIT: PROJECT_2_IMAGE -->
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/008/649/420/small_2x/check-out-linear-icon-of-curriculum-vitae-vector.jpg" alt="Project image" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+            <div class="space-y-2">
+              <!-- EDIT: PROJECT_2_TITLE -->
+              <h3 class="text-lg font-bold text-slate-900">
+                Project Title 2
+              </h3>
+              <!-- EDIT: PROJECT_2_DESCRIPTION -->
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div>
+              <!-- EDIT: PROJECT_2_LINK -->
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors pt-2">
+                <span>Project Link</span>
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white rounded-2xl border border-rose-100/90 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <div class="w-full aspect-video bg-rose-50/50 overflow-hidden relative border-b border-rose-100/60">
+            <!-- EDIT: PROJECT_3_IMAGE -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxL_0Z4pEu7CTSRdDbdO5IX5YEUfGQuN9xV8afitL0w&s">
+          </div>
+          <div class="p-6 flex flex-col flex-1 justify-between space-y-4">
+            <div class="space-y-2">
+              <!-- EDIT: PROJECT_3_TITLE -->
+              <h3 class="text-lg font-bold text-slate-900">
+                Project Title 3
+              </h3>
+              <!-- EDIT: PROJECT_3_DESCRIPTION -->
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div>
+              <!-- EDIT: PROJECT_3_LINK -->
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors pt-2">
+                <span>Project Link</span>
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS / TOOLS ==================== -->
+    <section id="skills" class="space-y-8">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 rounded-xl bg-rose-100/70 text-rose-600">
+          <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Skills / Tools</h2>
+          <p class="text-xs font-medium text-rose-500 uppercase tracking-wider mt-0.5">Instructional Competencies &amp; Technologies</p>
+        </div>
+      </div>
+
+      <!-- Exactly 2 reusable cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- CARD 1: SKILLS -->
+        <div class="bg-white rounded-2xl border border-rose-100/90 p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-rose-100/70">
+            <div class="p-2 rounded-lg bg-rose-50 text-rose-500">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Skills</h3>
+          </div>
+
+          <!-- EDIT: SKILLS_LIST -->
+          <ul class="space-y-3.5 text-slate-700 font-medium text-base">
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="check" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: SKILL_ITEM_1 -->
+              <span>HTML</span>
+            </li>
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="check" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: SKILL_ITEM_2 -->
+              <span>JavaScript</span>
+            </li>
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="check" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: SKILL_ITEM_3 -->
+              <span>ExpressJS</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: TOOLS / TECHNOLOGIES -->
+        <div class="bg-white rounded-2xl border border-rose-100/90 p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-rose-100/70">
+            <div class="p-2 rounded-lg bg-rose-50 text-rose-500">
+              <i data-lucide="wrench" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Tools / Technologies</h3>
+          </div>
+
+          <!-- EDIT: TOOLS_LIST -->
+          <ul class="space-y-3.5 text-slate-700 font-medium text-base">
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="terminal" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: TOOL_ITEM_1 -->
+              <span>MongoDB Compass</span>
+            </li>
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="terminal" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: TOOL_ITEM_2 -->
+              <span>Postman</span>
+            </li>
+            <li class="flex items-center gap-3 py-1.5 px-3 rounded-lg bg-rose-50/50 hover:bg-rose-50 transition-colors">
+              <i data-lucide="terminal" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <!-- EDIT: TOOL_ITEM_3 -->
+              <span>Heroku</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="space-y-8">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 rounded-xl bg-rose-100/70 text-rose-600">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Contact</h2>
+          <p class="text-xs font-medium text-rose-500 uppercase tracking-wider mt-0.5">Get in touch for training &amp; workshops</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-rose-100/90 p-8 sm:p-12 shadow-sm space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Contact Detail 1 -->
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-rose-50/40 border border-rose-100/60">
+            <div class="p-3 rounded-xl bg-white text-rose-500 shadow-sm shrink-0">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div class="space-y-1">
+              <span class="text-xs font-semibold text-rose-500 uppercase tracking-wider block">Email</span>
+              <!-- EDIT: CONTACT_EMAIL -->
+              <span class="text-slate-800 font-medium text-base block">
+                christophermortel18@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <!-- Contact Detail 2 -->
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-rose-50/40 border border-rose-100/60">
+            <div class="p-3 rounded-xl bg-white text-rose-500 shadow-sm shrink-0">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <div class="space-y-1">
+              <span class="text-xs font-semibold text-rose-500 uppercase tracking-wider block">Contact Information</span>
+              <!-- EDIT: CONTACT_INFO -->
+              <span class="text-slate-800 font-medium text-base block">
+                +639901238121
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social Links -->
+        <div class="pt-6 border-t border-rose-100/70">
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider mr-2">Social Channels:</span>
+            
+            <a href="#home" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-50/60 hover:bg-rose-100/80 text-slate-700 hover:text-rose-700 text-sm font-medium transition-colors border border-rose-100">
+              <i data-lucide="globe" class="w-4 h-4 text-rose-500"></i>
+              <!-- EDIT: SOCIAL_LINK_1 -->
+              <span>Website Porfolio</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/christopher-mortel-4836b2171/?isSelfProfile=true" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-50/60 hover:bg-rose-100/80 text-slate-700 hover:text-rose-700 text-sm font-medium transition-colors border border-rose-100">
+              <i data-lucide="linkedin" class="w-4 h-4 text-rose-500"></i>
+              <!-- EDIT: SOCIAL_LINK_2 -->
+              <span>Linkedin</span>
+            </a>
+
+            <a href="facebook.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-50/60 hover:bg-rose-100/80 text-slate-700 hover:text-rose-700 text-sm font-medium transition-colors border border-rose-100">
+              <i data-lucide="github" class="w-4 h-4 text-rose-500"></i>
+              <!-- EDIT: SOCIAL_LINK_3 -->
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="mt-20 border-t border-rose-100/80 bg-white/70 py-10 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-slate-500">
+      <div class="flex items-center gap-2">
+        <i data-lucide="graduation-cap" class="w-4 h-4 text-rose-400"></i>
+        <!-- EDIT: FOOTER_NAME -->
+        <span>&copy; <span id="year">2025</span> Your Name. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <!-- EDIT: FOOTER_JOB_TITLE -->
+        <span class="text-rose-600 font-medium">Your Job Title</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+    // Auto update current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
